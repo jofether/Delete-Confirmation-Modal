@@ -34,33 +34,40 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 font-sans">
       
       {/* BACKGROUND CONTENT */}
-      <div className={`p-8 transition-all duration-300 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+      {/* [BUG - SPACING] Negative margin causing overlapping and misalignment [FIX: change -m-32 to m-0] */}
+      <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
         <Header />
         <SettingsSection onDeleteClick={() => setIsModalOpen(true)} />
         <StatsGrid />
       </div>
 
       {/* MODAL */}
-      <Modal
-        isOpen={isModalOpen}
-        title="Delete Account?"
-        message="Are you sure you want to delete your account? All of your data will be permanently removed."
-        warning="This action cannot be undone."
-        onConfirm={handleDelete}
-        onCancel={handleCancel}
-        confirmText="Delete Forever"
-        cancelText="Cancel"
-        isLoading={isDeleting}
-      />
+      {/* [BUG - LAYERS] Modal z-index too low, content can appear on top [FIX: change z-40 to z-50] */}
+      <div className="relative z-40">
+        <Modal
+          isOpen={isModalOpen}
+          title="Delete Account?"
+          message="Are you sure you want to delete your account? All of your data will be permanently removed."
+          warning="This action cannot be undone."
+          onConfirm={handleDelete}
+          onCancel={handleCancel}
+          confirmText="Delete Forever"
+          cancelText="Cancel"
+          isLoading={isDeleting}
+        />
+      </div>
 
       {/* TOAST NOTIFICATION */}
-      {toast && (
-        <Toast 
-          message={toast.message} 
-          type={toast.type}
-          onClose={() => setToast(null)}
-        />
-      )}
+      {/* [BUG - SPACING] Toast positioned off-screen [FIX: change -bottom-32 to bottom-6] */}
+      <div className="fixed -bottom-32 z-40">
+        {toast && (
+          <Toast 
+            message={toast.message} 
+            type={toast.type}
+            onClose={() => setToast(null)}
+          />
+        )}
+      </div>
 
       {/* Custom Animations */}
       <style>{`

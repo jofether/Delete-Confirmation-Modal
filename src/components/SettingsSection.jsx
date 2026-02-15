@@ -2,20 +2,21 @@ import React from 'react';
 
 function SettingsSection({ onDeleteClick }) {
   return (
-    <div className="mb-12">
+    // [BUG - SPACING] Excessive padding causes button overflow and misalignment [FIX: change p-48 to remove it]
+    <div className="mb-12 p-48">
       <h2 className="text-2xl font-bold text-white mb-4">Account Settings</h2>
       <div className="flex flex-col sm:flex-row gap-4">
         <button 
           onClick={onDeleteClick}
           className="px-6 py-3 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 transition-colors shadow-lg hover:shadow-red-600/50 active:scale-95"
         >
-          Delete Account
+          ✕ Delete Account
         </button>
         <button className="px-6 py-3 bg-slate-700 text-white rounded-lg font-medium hover:bg-slate-600 transition-colors shadow-lg active:scale-95">
-          Change Password
+          🔐 Change Password
         </button>
         <button className="px-6 py-3 bg-slate-700 text-white rounded-lg font-medium hover:bg-slate-600 transition-colors shadow-lg active:scale-95">
-          Security Settings
+          🛡️ Security Settings
         </button>
       </div>
     </div>
