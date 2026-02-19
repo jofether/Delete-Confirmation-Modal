@@ -34,7 +34,6 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 font-sans">
       
       {/* BACKGROUND CONTENT */}
-      {/* [BUG - SPACING] Negative margin causing overlapping and misalignment [FIX: change -m-32 to m-0] */}
       <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
         <Header />
         <SettingsSection onDeleteClick={() => setIsModalOpen(true)} />
@@ -42,7 +41,6 @@ function App() {
       </div>
 
       {/* MODAL */}
-      {/* [BUG - LAYERS] Modal z-index too low, content can appear on top [FIX: change z-40 to z-50] */}
       <div className="relative z-40">
         <Modal
           isOpen={isModalOpen}
@@ -58,7 +56,6 @@ function App() {
       </div>
 
       {/* TOAST NOTIFICATION */}
-      {/* [BUG - SPACING] Toast positioned off-screen [FIX: change -bottom-32 to bottom-6] */}
       <div className="fixed -bottom-32 z-40">
         {toast && (
           <Toast 

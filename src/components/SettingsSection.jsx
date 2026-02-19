@@ -2,7 +2,6 @@ import React from 'react';
 
 function SettingsSection({ onDeleteClick }) {
   return (
-    // [BUG - SPACING] Excessive padding causes button overflow and misalignment [FIX: change p-48 to remove it]
     <div className="mb-12 p-48">
       <h2 className="text-2xl font-bold text-white mb-4">Account Settings</h2>
       <div className="flex flex-col sm:flex-row gap-4">

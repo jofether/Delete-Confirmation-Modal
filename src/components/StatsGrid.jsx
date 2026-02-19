@@ -11,7 +11,6 @@ function StatsGrid() {
     { title: 'Retention', value: '87%', icon: '📊', description: 'Retention rate' },
   ];
 
-  // [BUG - LAYOUT] Grid columns misaligned using wrong responsive classes, breaking responsive layout [FIX: change grid-cols-none to grid-cols-1 md:grid-cols-2 lg:grid-cols-3]
   return (
     <div className="grid grid-cols-none gap-6">
       {stats.map(stat => (
