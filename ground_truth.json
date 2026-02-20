@@ -1,0 +1,155 @@
+{
+  "repository": "Delete Confirmation Modal",
+  "bugs": [
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/App.jsx",
+      "line_number": 37,
+      "clean_code": "<div className={`p-8 transition-all duration-300 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>",
+      "buggy_code": "<div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>",
+      "css_selector": ".p-8",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 42,
+      "clean_code": "      <Modal\n        isOpen={isModalOpen}\n        title=\"Delete Account?\"\n        message=\"Are you sure you want to delete your account? All of your data will be permanently removed.\"\n        warning=\"This action cannot be undone.\"\n        onConfirm={handleDelete}\n        onCancel={handleCancel}\n        confirmText=\"Delete Forever\"\n        cancelText=\"Cancel\"\n        isLoading={isDeleting}\n      />",
+      "buggy_code": "      <div className=\"relative z-40\">\n        <Modal\n          isOpen={isModalOpen}\n          title=\"Delete Account?\"\n          message=\"Are you sure you want to delete your account? All of your data will be permanently removed.\"\n          warning=\"This action cannot be undone.\"\n          onConfirm={handleDelete}\n          onCancel={handleCancel}\n          confirmText=\"Delete Forever\"\n          cancelText=\"Cancel\"\n          isLoading={isDeleting}\n        />\n      </div>",
+      "css_selector": ".relative.z-40",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "position",
+      "file_modified": "src/App.jsx",
+      "line_number": 51,
+      "clean_code": "      {toast && (\n        <Toast \n          message={toast.message} \n          type={toast.type}\n          onClose={() => setToast(null)}\n        />\n      )}",
+      "buggy_code": "      <div className=\"fixed -bottom-32 z-40\">\n        {toast && (\n          <Toast \n            message={toast.message} \n            type={toast.type}\n            onClose={() => setToast(null)}\n          />\n        )}\n      </div>",
+      "css_selector": ".fixed.-bottom-32",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/components/Card.jsx",
+      "line_number": 5,
+      "clean_code": "    <div className=\"bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200\">",
+      "buggy_code": "    <div className=\"bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200 mb-999\">",
+      "css_selector": ".bg-slate-700",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 5,
+      "clean_code": "    <nav className=\"flex justify-between items-center mb-12\">",
+      "buggy_code": "    <nav className=\"flex flex-row-reverse justify-between items-center mb-12\">",
+      "css_selector": "nav",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "position",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 7,
+      "clean_code": "      <div className=\"flex space-x-3\">",
+      "buggy_code": "      <div className=\"flex space-x-3 absolute -top-4 text-white\">",
+      "css_selector": ".flex.space-x-3",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/Modal.jsx",
+      "line_number": 16,
+      "clean_code": "      <div \n        className={`bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${",
+      "buggy_code": "      <div \n        className={`relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${",
+      "css_selector": ".bg-white.rounded-2xl",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/Modal.jsx",
+      "line_number": 21,
+      "clean_code": "          <div className=\"mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-6 animate-pulse\">",
+      "buggy_code": "          <div className=\"mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse\">",
+      "css_selector": ".bg-red-5",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/SettingsSection.jsx",
+      "line_number": 5,
+      "clean_code": "    <div className=\"mb-12\">",
+      "buggy_code": "    <div className=\"mb-12 p-48\">",
+      "css_selector": ".mb-12",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid-template-columns",
+      "file_modified": "src/components/StatsGrid.jsx",
+      "line_number": 15,
+      "clean_code": "    <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">",
+      "buggy_code": "    <div className=\"grid grid-cols-none gap-6\">",
+      "css_selector": ".grid",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
