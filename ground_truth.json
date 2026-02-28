@@ -2,6 +2,7 @@
   "repository": "Delete Confirmation Modal",
   "bugs": [
     {
+      "comment": "Bug #1 - margin",
       "bug_category": "Spacing",
       "bug_type": "margin",
       "file_modified": "src/App.jsx",
@@ -10,13 +11,14 @@
       "buggy_code": "<div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>",
       "css_selector": ".p-8",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": -128,
+        "y": -128,
+        "width": 1536,
+        "height": 1838
       }
     },
     {
+      "comment": "Bug #2 - z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/App.jsx",
@@ -26,12 +28,13 @@
       "css_selector": ".relative.z-40",
       "bounding_box": {
         "x": 0,
-        "y": 0,
-        "width": 0,
+        "y": 1582,
+        "width": 1280,
         "height": 0
       }
     },
     {
+      "comment": "Bug #3 - position",
       "bug_category": "Spacing",
       "bug_type": "position",
       "file_modified": "src/App.jsx",
@@ -41,12 +44,13 @@
       "css_selector": ".fixed.-bottom-32",
       "bounding_box": {
         "x": 0,
-        "y": 0,
+        "y": 920,
         "width": 0,
         "height": 0
       }
     },
     {
+      "comment": "Bug #4 - margin-bottom",
       "bug_category": "Spacing",
       "bug_type": "margin-bottom",
       "file_modified": "src/components/Card.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "    <div className=\"bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200 mb-999\">",
       "css_selector": ".bg-slate-700",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 289,
+        "y": 228,
+        "width": 202,
+        "height": 48
       }
     },
     {
+      "comment": "Bug #5 - flexbox",
       "bug_category": "Layout",
       "bug_type": "flexbox",
       "file_modified": "src/components/Header.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "    <nav className=\"flex flex-row-reverse justify-between items-center mb-12\">",
       "css_selector": "nav",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": -96,
+        "y": -96,
+        "width": 1472,
+        "height": 36
       }
     },
     {
+      "comment": "Bug #6 - position",
       "bug_category": "Spacing",
       "bug_type": "position",
       "file_modified": "src/components/Header.jsx",
@@ -85,13 +91,14 @@
       "buggy_code": "      <div className=\"flex space-x-3 absolute -top-4 text-white\">",
       "css_selector": ".flex.space-x-3",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 1240,
+        "y": -144,
+        "width": 136,
+        "height": 40
       }
     },
     {
+      "comment": "Bug #7 - position",
       "bug_category": "Layers",
       "bug_type": "position",
       "file_modified": "src/components/Modal.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "      <div \n        className={`relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${",
       "css_selector": ".bg-white.rounded-2xl",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 522,
+        "y": 229,
+        "width": 365,
+        "height": 334
       }
     },
     {
+      "comment": "Bug #8 - background-color",
       "bug_category": "Color",
       "bug_type": "background-color",
       "file_modified": "src/components/Modal.jsx",
@@ -115,13 +123,14 @@
       "buggy_code": "          <div className=\"mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse\">",
       "css_selector": ".bg-red-5",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 674,
+        "y": 259,
+        "width": 61,
+        "height": 61
       }
     },
     {
+      "comment": "Bug #9 - padding",
       "bug_category": "Spacing",
       "bug_type": "padding",
       "file_modified": "src/components/SettingsSection.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "    <div className=\"mb-12 p-48\">",
       "css_selector": ".mb-12",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": -96,
+        "y": -12,
+        "width": 1472,
+        "height": 480
       }
     },
     {
+      "comment": "Bug #10 - grid-template-columns",
       "bug_category": "Layout",
       "bug_type": "grid-template-columns",
       "file_modified": "src/components/StatsGrid.jsx",
@@ -145,10 +155,10 @@
       "buggy_code": "    <div className=\"grid grid-cols-none gap-6\">",
       "css_selector": ".grid",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": -96,
+        "y": 516,
+        "width": 1472,
+        "height": 1162
       }
     }
   ]
