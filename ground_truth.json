@@ -9,12 +9,12 @@
       "line_number": 37,
       "clean_code": "<div className={`p-8 transition-all duration-300 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>",
       "buggy_code": "<div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>",
-      "css_selector": ".p-8",
+      "css_selector": "div.p-8.transition-all.duration-300",
       "bounding_box": {
-        "x": -128,
-        "y": -128,
-        "width": 1536,
-        "height": 1838
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
       }
     },
     {
@@ -25,12 +25,12 @@
       "line_number": 42,
       "clean_code": "      <Modal\n        isOpen={isModalOpen}\n        title=\"Delete Account?\"\n        message=\"Are you sure you want to delete your account? All of your data will be permanently removed.\"\n        warning=\"This action cannot be undone.\"\n        onConfirm={handleDelete}\n        onCancel={handleCancel}\n        confirmText=\"Delete Forever\"\n        cancelText=\"Cancel\"\n        isLoading={isDeleting}\n      />",
       "buggy_code": "      <div className=\"relative z-40\">\n        <Modal\n          isOpen={isModalOpen}\n          title=\"Delete Account?\"\n          message=\"Are you sure you want to delete your account? All of your data will be permanently removed.\"\n          warning=\"This action cannot be undone.\"\n          onConfirm={handleDelete}\n          onCancel={handleCancel}\n          confirmText=\"Delete Forever\"\n          cancelText=\"Cancel\"\n          isLoading={isDeleting}\n        />\n      </div>",
-      "css_selector": ".relative.z-40",
+      "css_selector": "div.fixed.inset-0.z-50",
       "bounding_box": {
         "x": 0,
-        "y": 1582,
+        "y": 0,
         "width": 1280,
-        "height": 0
+        "height": 720
       }
     },
     {
@@ -41,12 +41,12 @@
       "line_number": 51,
       "clean_code": "      {toast && (\n        <Toast \n          message={toast.message} \n          type={toast.type}\n          onClose={() => setToast(null)}\n        />\n      )}",
       "buggy_code": "      <div className=\"fixed -bottom-32 z-40\">\n        {toast && (\n          <Toast \n            message={toast.message} \n            type={toast.type}\n            onClose={() => setToast(null)}\n          />\n        )}\n      </div>",
-      "css_selector": ".fixed.-bottom-32",
+      "css_selector": "div.fixed.bottom-6.right-6",
       "bounding_box": {
         "x": 0,
-        "y": 920,
-        "width": 0,
-        "height": 0
+        "y": 0,
+        "width": 1280,
+        "height": 720
       }
     },
     {
@@ -57,12 +57,12 @@
       "line_number": 5,
       "clean_code": "    <div className=\"bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200\">",
       "buggy_code": "    <div className=\"bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200 mb-999\">",
-      "css_selector": ".bg-slate-700",
+      "css_selector": "div.bg-slate-700\\/50.rounded-lg.shadow-sm.p-6",
       "bounding_box": {
-        "x": 289,
-        "y": 228,
-        "width": 202,
-        "height": 48
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
       }
     },
     {
@@ -73,12 +73,12 @@
       "line_number": 5,
       "clean_code": "    <nav className=\"flex justify-between items-center mb-12\">",
       "buggy_code": "    <nav className=\"flex flex-row-reverse justify-between items-center mb-12\">",
-      "css_selector": "nav",
+      "css_selector": "nav.flex.justify-between.items-center.mb-12",
       "bounding_box": {
-        "x": -96,
-        "y": -96,
-        "width": 1472,
-        "height": 36
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 100
       }
     },
     {
@@ -89,12 +89,12 @@
       "line_number": 7,
       "clean_code": "      <div className=\"flex space-x-3\">",
       "buggy_code": "      <div className=\"flex space-x-3 absolute -top-4 text-white\">",
-      "css_selector": ".flex.space-x-3",
+      "css_selector": "nav div.flex.space-x-3",
       "bounding_box": {
-        "x": 1240,
-        "y": -144,
-        "width": 136,
-        "height": 40
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 100
       }
     },
     {
@@ -105,7 +105,7 @@
       "line_number": 16,
       "clean_code": "      <div \n        className={`bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${",
       "buggy_code": "      <div \n        className={`relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${",
-      "css_selector": ".bg-white.rounded-2xl",
+      "css_selector": "div.bg-white.rounded-2xl.shadow-2xl.max-w-sm",
       "bounding_box": {
         "x": 522,
         "y": 229,
@@ -121,12 +121,12 @@
       "line_number": 21,
       "clean_code": "          <div className=\"mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-6 animate-pulse\">",
       "buggy_code": "          <div className=\"mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse\">",
-      "css_selector": ".bg-red-5",
+      "css_selector": ".h-16.w-16.rounded-full.animate-pulse",
       "bounding_box": {
         "x": 674,
         "y": 259,
-        "width": 61,
-        "height": 61
+        "width": 100,
+        "height": 100
       }
     },
     {
@@ -137,12 +137,12 @@
       "line_number": 5,
       "clean_code": "    <div className=\"mb-12\">",
       "buggy_code": "    <div className=\"mb-12 p-48\">",
-      "css_selector": ".mb-12",
+      "css_selector": "div.mb-12",
       "bounding_box": {
-        "x": -96,
-        "y": -12,
-        "width": 1472,
-        "height": 480
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
       }
     },
     {
@@ -153,12 +153,12 @@
       "line_number": 15,
       "clean_code": "    <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">",
       "buggy_code": "    <div className=\"grid grid-cols-none gap-6\">",
-      "css_selector": ".grid",
+      "css_selector": "div.grid.gap-6",
       "bounding_box": {
-        "x": -96,
-        "y": 516,
-        "width": 1472,
-        "height": 1162
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
       }
     }
   ]
