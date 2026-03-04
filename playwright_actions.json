@@ -1,0 +1,20 @@
+{
+  "actions": [
+    {
+      "name": "bug-2-OpenModal",
+      "selector": "button.px-6.bg-red-600"
+    },
+    {
+      "name": "bug-7-OpenModal",
+      "selector": "button.px-6.bg-red-600"
+    },
+    {
+      "name": "bug-8-OpenModal",
+      "selector": "button.px-6.bg-red-600"
+    },
+    {
+      "name": "bug-3-ShowToast",
+      "selector": ["button.px-6.bg-red-600", "button.px-5.bg-red-600"]
+    }
+  ]
+}
